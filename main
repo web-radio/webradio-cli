@@ -4,9 +4,9 @@ import requests
 
 for arg in sys.argv:
     if arg == '-h' or arg == '--help':
-        print('-s, --search - search for radios; NOTE: after -s argument you must type query')
+        print('-s, --search - search for radios; NOTE: after -s argument you must type query like: pop, rock... \n')
     elif arg == '-s' or arg == '--search':
-        QUERY = input()
+        QUERY = input("search: ")
         BASE_URL = "https://de1.api.radio-browser.info/json/stations/byname/"
         OUTPUT_URL = BASE_URL + QUERY
 
